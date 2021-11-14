@@ -1,11 +1,13 @@
 Question Link: https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/
 
+// Approach 1:
+
 class Solution {
 public:
     int numOfPairs(vector<string>& a, string target) {
         int n=a.size();
         int c=0;
-    /*    for(int i=0;i<n-1;i++){
+        for(int i=0;i<n-1;i++){
             for(int j=i+1;j<n;j++){
                 string s=a[i]+a[j];
                 if(s==target) c++;
@@ -17,7 +19,18 @@ public:
                 if(s==target) c++;
             }
         }
-        return c; */
+        
+        return c;
+    }
+};
+
+// Approach 2:
+
+class Solution {
+public:
+    int numOfPairs(vector<string>& a, string target) {
+        int n=a.size();
+        int c=0;
         
         int m=target.length();
         
