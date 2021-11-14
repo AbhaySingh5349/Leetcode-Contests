@@ -30,12 +30,10 @@ public:
         for(int i=0;i<n;i++){
             int x=a[i]+k;
             if(mp.find(x)!=mp.end()) c+=mp[x];
-            mp[a[i]]++;
-        }
-        mp.clear();
-        for(int i=0;i<n;i++){
-            int x=a[i]-k;
-            if(mp.find(x)!=mp.end()) c+=mp[x];
+            
+            int y=a[i]-k;
+            if(mp.find(y)!=mp.end()) c+=mp[y];
+            
             mp[a[i]]++;
         }
         
