@@ -9,13 +9,13 @@ public:
         
         for(int i=1;i<n;i++){
             if(a[i]<=a[i-1]){
-                left[i]=1+left[i-1];
+                left[i]=1+left[i-1]; // count of elemnts from [0,i-1] >= a[i]
             }
         }
         
         for(int i=n-2;i>=0;i--){
             if(a[i]<=a[i+1]){
-                right[i]=1+right[i+1];
+                right[i]=1+right[i+1]; // count of elemnts from [i+1,n-1] >= a[i]
             }
         }
         
