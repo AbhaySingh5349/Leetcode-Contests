@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/
+Question Link: https://leetcode.com/problems/a-number-after-a-double-reversal/
 
 class Solution {
 public:
