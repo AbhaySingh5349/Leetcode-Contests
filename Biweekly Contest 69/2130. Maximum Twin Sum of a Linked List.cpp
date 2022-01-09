@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/capitalize-the-title/
+Question Link: https:https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
 
 // --> we can divide our list in 2 halves, reverse the 2nd half and iterate in 2-pointer fashion to get twin sum
 
