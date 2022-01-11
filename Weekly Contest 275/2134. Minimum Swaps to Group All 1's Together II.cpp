@@ -1,6 +1,8 @@
-Question Link: https://leetcode.com/problems/capitalize-the-title/
+Question Link: https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/
 
 // --> let count of 1s be 'k', so after rearranging, we will be having a window of size 'k'
+
+// Approach 1:
 
 class Solution {
 public:
@@ -10,7 +12,7 @@ public:
         int k=0, zero=0;
         for(int i=0;i<n;i++) k += (a[i]==1);
         
-    /*    a.insert(a.end(), a.begin(), a.end()); // doubling the size of array as it is circular
+        a.insert(a.end(), a.begin(), a.end()); // doubling the size of array as it is circular
         
         int ans=n;
         
@@ -25,7 +27,21 @@ public:
                 i++;
             }
             j++;
-        } */
+        }
+        
+        return (ans==n ? 0:ans);
+    }
+};
+
+// Approach 2:
+
+class Solution {
+public:
+    int minSwaps(vector<int> &a) {
+        int n=a.size();
+        
+        int k=0, zero=0;
+        for(int i=0;i<n;i++) k += (a[i]==1);
         
         int ans=n;
         
