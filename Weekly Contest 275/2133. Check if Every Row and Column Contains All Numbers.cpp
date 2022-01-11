@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/capitalize-the-title/
+Question Link: https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/
 
 class Solution {
 public:
