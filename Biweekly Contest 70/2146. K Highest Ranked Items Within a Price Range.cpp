@@ -4,11 +4,11 @@ class Solution {
 public:
     
     struct node{
-        int dist;
-        int cost;
-        int r;
-        int c;
+        int dist; // distance of current cell from start
+        int cost; // price at current cell
+        int r, c; // row and column of current cell
     };
+    
     struct compare{
         bool operator()(const node &a, const node &b){
             if(a.dist != b.dist){
