@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/license-key-formatting/
+Question Link: https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/
 
 class Solution {
 public:
