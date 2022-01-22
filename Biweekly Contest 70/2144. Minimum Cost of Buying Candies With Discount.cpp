@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/license-key-formatting/
+Question Link: https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
 
 class Solution {
 public:
