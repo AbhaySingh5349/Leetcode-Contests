@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/license-key-formatting/
+Question Link: https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/
 
 // Approach 1:
 
