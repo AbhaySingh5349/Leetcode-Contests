@@ -1,4 +1,4 @@
-Question Link: https://leetcode.com/problems/license-key-formatting/
+Question Link: https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/
 
 class Solution {
 public:
