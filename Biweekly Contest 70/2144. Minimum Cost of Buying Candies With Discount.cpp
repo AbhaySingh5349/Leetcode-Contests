@@ -1,5 +1,7 @@
 Question Link: https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
 
+// Approach 1:
+
 class Solution {
 public:
     int minimumCost(vector<int> &a) {
@@ -22,6 +24,25 @@ public:
             }
             if(pq.size()>0) pq.pop();
         }
+        return c;
+    }
+};
+
+// Approach 2:
+
+class Solution {
+public:
+    int minimumCost(vector<int> &a) {
+        int n=a.size();
+        
+        if(n==1) return a[0];
+        if(n==2) return (a[0]+a[1]);
+        
+        sort(a.begin(),a.end());
+        
+        int c=0;
+        for(int i=n-1;i>=0;i-=3) c += a[i] + (i>0 ? a[i-1]:0);
+        
         return c;
     }
 };
